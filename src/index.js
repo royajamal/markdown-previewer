@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import MarkdownPreviewer from './components/MarkdownPreviewer.js';
+import MarkdownPreviewer from './components/MarkdownPreviewer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
