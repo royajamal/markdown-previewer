@@ -1,0 +1,43 @@
+.editor-box {
+  margin-top: 96px;
+  margin-bottom: 48px;
+}
+
+.previewer-box {
+  margin-bottom: 48px;
+}
+
+.heading {
+  font-size: 24px;
+  padding: 8px;
+  background-color: #ffe3e3;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-top: 2px solid #ff6b6b;
+  border-left: 2px solid #ff6b6b;
+  border-right: 2px solid #ff6b6b;
+  margin: 0;
+}
+
+#editor, #preview {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  font-family: sans-serif;
+  background-color: #ffe3e3;
+  border: 2px solid #ff6b6b;
+}
+
+#editor {
+  min-height: 200px;
+}
+
+#editor:focus {
+  outline: none;
+}
+
+footer p {
+  font-size: 18px;
+  text-align: center;
+  font-family: sans-serif;
+}
