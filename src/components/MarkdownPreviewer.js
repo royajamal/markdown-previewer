@@ -44,42 +44,44 @@ class MarkdownPreviewer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: ""
+      value: '',
     };
   }
-  
-  updateMarkup = (event) => {
-    this.setState({
-      value: event.target.value
-    });
-  }
-  
+
   componentDidMount() {
     this.setState({
-      value: markdown
+      value: markdown,
     });
   }
-    
+
+  updateMarkup = (event) => {
+    this.setState({
+      value: event.target.value,
+    });
+  };
+
   render() {
+    const { value } = this.state; // Destructure state
+
     return (
       <div className="container">
         <div className="editor-box">
           <h2 className="heading">Editor</h2>
-          <textarea 
-            id="editor" 
-            value={this.state.value} 
-            type="text" 
-            onChange={this.updateMarkup.bind(this)} 
+          <textarea
+            id="editor"
+            value={value}
+            type="text"
+            onChange={this.updateMarkup}
           />
         </div>
         <div className="previewer-box">
           <h2 className="heading">Previewer</h2>
-          <div 
+          <div
             dangerouslySetInnerHTML={{
-              __html: marked.parse(this.state.value)
+              __html: marked.parse(value),
             }}
-            id="preview">
-          </div>
+            id="preview"
+          />
         </div>
       </div>
     );
