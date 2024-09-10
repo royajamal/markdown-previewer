@@ -1,5 +1,5 @@
 import React from 'react';
-import { marked } from 'marked'; // Only import marked once
+import { marked } from 'marked';
 import './MarkdownPreviewer.css';
 
 const markdown = `# h1
@@ -35,7 +35,6 @@ We can also embed images ![an image](https://source.unsplash.com/T-0EW-SEbsE)
 We can also write **bold** and _italic_ text or both _**like this**_
 >We can also create block quotes!`;
 
-// Configure 'marked' to allow carriage returns as <br />
 marked.setOptions({
   breaks: true,
 });
@@ -61,7 +60,7 @@ class MarkdownPreviewer extends React.Component {
   };
 
   render() {
-    const { value } = this.state; // Destructure state
+    const { value } = this.state;
 
     return (
       <div className="container">
