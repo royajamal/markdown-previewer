@@ -19,7 +19,14 @@
   margin: 0;
 }
 
-#editor,
+#editor {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  font-family: sans-serif;
+  background-color: #ffe3e3;
+  border: 2px solid #ff6b6b;
+}
 
 #preview {
   width: 100%;
