@@ -26,6 +26,7 @@
   font-family: sans-serif;
   background-color: #ffe3e3;
   border: 2px solid #ff6b6b;
+  min-height: 200px;
 }
 
 #preview {
@@ -35,10 +36,6 @@
   font-family: sans-serif;
   background-color: #ffe3e3;
   border: 2px solid #ff6b6b;
-}
-
-#editor {
-  min-height: 200px;
 }
 
 #editor:focus {
