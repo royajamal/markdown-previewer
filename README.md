@@ -1,5 +1,6 @@
 ## Markdown Previewer 📝✨
 
+
 ## Project Description 📝
  *Markdown Previewer*
  The Markdown Previewer is a web application that allows users to write and preview Markdown syntax in real-time. It consists of two primary sections: an editor where users can input their Markdown text, and a preview box that displays the formatted output based on the Markdown syntax.
